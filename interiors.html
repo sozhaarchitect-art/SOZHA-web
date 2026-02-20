@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interiors | SOZHA Architecture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sozha Architect Logo">
+                SOZHA ARCHITECT
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 10rem; background-color: var(--color-bg-darker);">
+        <div class="container text-center fade-up">
+            <p class="uppercase text-accent">Interiors</p>
+            <h1 style="max-width: 800px; margin: 0 auto;">Crafting Inner Sanctuaries.</h1>
+            <p style="margin-top: 2rem;">Residential | Commercial | Hospitality</p>
+        </div>
+    </section>
+
+    <!-- Visual Showcase -->
+    <section class="section">
+        <div class="container">
+            <!-- Reuse standard grid but maybe different content hardcoded for now or reuse projects.json with filter -->
+
+            <div class="grid-2">
+                <div class="fade-up">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?q=80&w=2670&auto=format&fit=crop"
+                        style="width:100%; aspect-ratio: 1; object-fit: cover;">
+                    <h2 class="text-accent" style="margin-top: 1.5rem;">Living Spaces</h2>
+                    <p>Designed for comfort and conversation. We create living rooms that are the heart of the home.</p>
+                </div>
+                <div class="fade-up">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2600&auto=format&fit=crop"
+                        style="width:100%; aspect-ratio: 1; object-fit: cover;">
+                    <h2 class="text-accent" style="margin-top: 1.5rem;">Modular Kitchens</h2>
+                    <p>Efficiency meets elegance. Bespoke kitchen solutions that make cooking a joy.</p>
+                </div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 4rem;">
+                <div class="fade-up">
+                    <img src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?q=80&w=2670&auto=format&fit=crop"
+                        style="width:100%; aspect-ratio: 1; object-fit: cover;">
+                    <h2 class="text-accent" style="margin-top: 1.5rem;">Bedrooms</h2>
+                    <p>Serene retreats tailored to your personal style for rest and rejuvenation.</p>
+                </div>
+                <div class="fade-up">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2301&auto=format&fit=crop"
+                        style="width:100%; aspect-ratio: 1; object-fit: cover;">
+                    <h2 class="text-accent" style="margin-top: 1.5rem;">Office Interiors</h2>
+                    <p>Productive workspaces that reflect your brand identity.</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Detailed Project Showcase (Dynamic) -->
+    <section class="section" style="background-color: var(--color-bg-darker);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <p class="uppercase text-accent">Portfolio</p>
+                <h2>Recent Interior Works</h2>
+            </div>
+            <div id="interiors-grid" class="grid-2">
+                <!-- Interior Projects injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section text-center" style="background-color: var(--color-bg-darker);">
+        <div class="container">
+            <h2>Ready to transform your space?</h2>
+            <br>
+            <a href="contact.html?service=interior" class="btn btn-primary">Book a Consultation</a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

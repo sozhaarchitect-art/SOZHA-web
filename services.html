@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SOZHA Architecture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sozha Architect Logo">
+                SOZHA ARCHITECT
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="padding-top: 10rem; padding-bottom: 4rem; background-color: var(--color-bg-darker);">
+        <div class="container text-center fade-up">
+            <p class="uppercase text-accent">What We Do</p>
+            <h1 style="max-width: 800px; margin: 0 auto;">Comprehensive Design & Build Solutions.</h1>
+        </div>
+    </section>
+
+    <!-- Service 1: Architecture -->
+    <section class="section" id="architecture">
+        <div class="container grid-2" style="align-items: center;">
+            <div class="fade-up">
+                <img src="https://images.unsplash.com/photo-1511818966892-d55d44442717?q=80&w=2600&auto=format&fit=crop"
+                    alt="Architecture" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div class="fade-up" style="padding-left: 2rem;">
+                <h2 class="text-accent">Architecture Design</h2>
+                <p>We design buildings that shape cities and lives. From residential villas to commercial high-rises,
+                    our architectural approach blends aesthetics with functionality.</p>
+
+                <div style="margin-top: 2rem;">
+                    <h4 style="margin-bottom: 1rem;">Process</h4>
+                    <ul style="border-left: 2px solid var(--color-accent); padding-left: 1.5rem;">
+                        <li style="margin-bottom: 1rem;"><strong>01. Conceptualization</strong><br><span
+                                style="font-size: 0.9rem; opacity: 0.7;">Understanding site, climate, and client
+                                vision.</span></li>
+                        <li style="margin-bottom: 1rem;"><strong>02. Design Development</strong><br><span
+                                style="font-size: 0.9rem; opacity: 0.7;">2D Plans, 3D Models, and government
+                                approvals.</span></li>
+                        <li><strong>03. Execution Details</strong><br><span
+                                style="font-size: 0.9rem; opacity: 0.7;">Structural drawings and material
+                                specifications.</span></li>
+                    </ul>
+                </div>
+                <br>
+                <a href="contact.html?service=architecture" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 2: Interiors -->
+    <section class="section" style="background-color: var(--color-bg-darker);" id="interiors">
+        <div class="container grid-2" style="align-items: center;">
+            <!-- Text Left, Image Right -->
+            <div class="fade-up" style="padding-right: 2rem; order: 2;"> <!-- Order manipulation for desktop -->
+                <style>
+                    @media(min-width: 769px) {
+                        .order-swap-start {
+                            order: 1;
+                        }
+
+                        .order-swap-end {
+                            order: 2;
+                        }
+                    }
+                </style>
+                <!-- Actually sticking to standard HTML flow is safer if CSS grid order isn't fully set up in inline styles. 
+                      Let's just swap HTML logic: Text first, Image second -->
+                <h2 class="text-accent">Interior Design</h2>
+                <p>Spaces that tell your story. Our interior design services cover everything from layout planning to
+                    furniture selection and lighting design.</p>
+                <ul style="list-style: disc; padding-left: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                    <li>Residential Interiors</li>
+                    <li>Commercial & Office Spaces</li>
+                    <li>Modular Kitchens & Wardrobes</li>
+                    <li>Custom Furniture</li>
+                </ul>
+                <a href="contact.html?service=interiors" class="btn btn-primary">Enquire Now</a>
+            </div>
+            <div class="fade-up" style="order: 1;">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2600&auto=format&fit=crop"
+                    alt="Interior Design" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: Construction -->
+    <section class="section" id="construction">
+        <div class="container grid-2" style="align-items: center;">
+            <div class="fade-up">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop"
+                    alt="Construction" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div class="fade-up" style="padding-left: 2rem;">
+                <h2 class="text-accent">Construction & Turnkey</h2>
+                <p>We take full responsibility for building your dream. Our turnkey solutions ensure that the project is
+                    delivered on time, within budget, and to the highest quality standards.</p>
+                <p>We handle everything from material procurement to site supervision and quality control.</p>
+                <br>
+                <a href="contact.html?service=construction" class="btn btn-primary">Start Building</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section text-center" style="padding: 6rem 0;">
+        <div class="container">
+            <h3>Need a Custom Solution?</h3>
+            <p style="margin-bottom: 2rem;">We also offer Landscape Design, Renovation, and 3D Visualization services.
+            </p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Index) -->
+    <footer style="background-color: #000; padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <div class="grid-3" style="margin-bottom: 3rem;">
+                <div>
+                    <a href="index.html" class="logo"
+                        style="font-size: 2rem; display: block; margin-bottom: 1.5rem;">SOZHA</a>
+                    <p style="font-size: 0.9rem;">Architecture | Interior | Construction</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-white); margin-bottom: 1.5rem;">Quick Links</h4>
+                    <ul style="opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html">About Us</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="services.html">Services</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="projects.html">Projects</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-white); margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">SOZHAARCHITECT@GMAIL.COM</p>
+                    <p style="font-size: 0.9rem;">+91 98765 43210</p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.5rem; display: flex; justify-content: space-between; opacity: 0.5; font-size: 0.8rem;">
+                <p>&copy; 2026 Sozha Architects. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

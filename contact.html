@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SOZHA Architecture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sozha Architect Logo">
+                SOZHA ARCHITECT
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 10rem; background-color: var(--color-bg-darker);">
+        <div class="container text-center fade-up">
+            <p class="uppercase text-accent">Get in Touch</p>
+            <h1 style="max-width: 800px; margin: 0 auto;">Let's Build Your Vision.</h1>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="section">
+        <div class="container grid-2" style="align-items: start;">
+
+            <!-- Info -->
+            <div class="fade-up">
+                <h3>Contact Information</h3>
+                <div style="margin-top: 2rem;">
+                    <div style="margin-bottom: 2rem;">
+                        <span class="text-accent uppercase" style="font-size: 0.8rem;">Address</span>
+                        <p style="margin-top: 0.5rem; font-size: 1.1rem;">#123, Architectural Avenue,<br>Designer's
+                            Block, Chennai - 600001</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <span class="text-accent uppercase" style="font-size: 0.8rem;">Phone / WhatsApp</span>
+                        <p style="margin-top: 0.5rem; font-size: 1.1rem;">+91 98765 43210</p>
+                        <a href="#" class="btn" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.8rem;">Chat
+                            on WhatsApp</a>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <span class="text-accent uppercase" style="font-size: 0.8rem;">Email</span>
+                        <p style="margin-top: 0.5rem; font-size: 1.1rem;">SOZHAARCHITECT@GMAIL.COM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="fade-up glass-panel">
+                <h3 style="margin-bottom: 2rem;">Send a Message</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Name</label>
+                        <input type="text" placeholder="Your Name"
+                            style="width: 100%; padding: 1rem; background: #333; border: 1px solid #444; color: #fff; font-family: var(--font-body);">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Email</label>
+                        <input type="email" placeholder="Your Email"
+                            style="width: 100%; padding: 1rem; background: #333; border: 1px solid #444; color: #fff; font-family: var(--font-body);">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Phone</label>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <select name="countryCode"
+                                style="width: 80px; padding: 1rem; background: #333; border: 1px solid #444; color: #fff; font-family: var(--font-body); border-radius: 4px;">
+                                <option value="+91">+91 (IN)</option>
+                                <option value="+1">+1 (US)</option>
+                                <option value="+44">+44 (UK)</option>
+                                <option value="+971">+971 (UAE)</option>
+                                <option value="+65">+65 (SG)</option>
+                                <option value="+61">+61 (AU)</option>
+                            </select>
+                            <input type="tel" placeholder="Phone Number"
+                                style="flex: 1; padding: 1rem; background: #333; border: 1px solid #444; color: #fff; font-family: var(--font-body);">
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Message</label>
+                        <textarea placeholder="Tell us about your project..." rows="5"
+                            style="width: 100%; padding: 1rem; background: #333; border: 1px solid #444; color: #fff; font-family: var(--font-body);"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section>
+        <div
+            style="width: 100%; height: 400px; background: #333; display: flex; justify-content: center; align-items: center; color: #666;">
+            [ Google Map Integration ]
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="success-modal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2000; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); justify-content: center; align-items: center;">
+        <div class="glass-panel text-center fade-up visible"
+            style="max-width: 400px; padding: 3rem; border: 1px solid var(--color-accent);">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+            <h3 style="color: var(--color-white); margin-bottom: 1rem;">Message Sent!</h3>
+            <p style="margin-bottom: 2rem;">Thank you for reaching out. A confirmation email has been sent to you. Our
+                team will review your message and get back to you shortly.</p>
+            <button onclick="document.getElementById('success-modal').style.display='none'"
+                class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #000; padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <div class="grid-3" style="margin-bottom: 3rem;">
+                <div>
+                    <a href="index.html" class="logo"
+                        style="font-size: 2rem; display: block; margin-bottom: 1.5rem;">SOZHA</a>
+                    <p style="font-size: 0.9rem;">Architecture | Interior | Construction</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-white); margin-bottom: 1.5rem;">Quick Links</h4>
+                    <ul style="opacity: 0.7; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="about.html">About Us</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="services.html">Services</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="projects.html">Projects</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-white); margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">SOZHAARCHITECT@GMAIL.COM</p>
+                    <p style="font-size: 0.9rem;">+91 98765 43210</p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.5rem; display: flex; justify-content: space-between; opacity: 0.5; font-size: 0.8rem;">
+                <p>&copy; 2026 Sozha Architects. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
