@@ -1,0 +1,26 @@
+[
+    {
+        "id": "architecture",
+        "title": "Architecture Design",
+        "description": "Comprehensive architectural planning and design for residential and commercial projects.",
+        "icon": "building"
+    },
+    {
+        "id": "interior",
+        "title": "Interior Design",
+        "description": "Bespoke interior solutions creating harmonious living and working environments.",
+        "icon": "couch"
+    },
+    {
+        "id": "construction",
+        "title": "Construction",
+        "description": "End-to-end construction execution with focus on quality and timeliness.",
+        "icon": "hard-hat"
+    },
+    {
+        "id": "landscape",
+        "title": "Landscape Design",
+        "description": "Integrating nature with architecture through thoughtful landscape planning.",
+        "icon": "tree"
+    }
+]

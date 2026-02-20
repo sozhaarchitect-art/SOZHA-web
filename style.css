@@ -1,0 +1,460 @@
+/* 
+   Sozha Architecture - "Liquid Glass" Design System 
+   Premium, Translucent, Ethereal
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* Colors */
+    --color-bg-dark: #0f0f0f;
+    /* Deepest Black */
+    --color-bg-darker: #050505;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgba(255, 255, 255, 0.7);
+    /* Translucent Text */
+    --color-accent: #e0d0b8;
+    /* Softer, paler gold for glass */
+    --color-accent-hover: #ffffff;
+
+    /* Glass Effect Variables */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --glass-blur: blur(16px);
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Layout */
+    --container-max-width: 1440px;
+    --grid-gap: 2rem;
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-bg-dark);
+    /* Subtle mesh gradient background to enhance glass effect */
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(210, 180, 140, 0.03), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.02), transparent 25%);
+    background-attachment: fixed;
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-white);
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 300;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 4px;
+    /* Slight softening */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+.container {
+    width: 90%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Liquid Glass Utilities */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+/* Buttons (Glassy) */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    /* Glassy bg */
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    border-radius: 30px;
+    /* Pill shape for liquid feel */
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+.btn-primary {
+    background: rgba(210, 180, 140, 0.2);
+    /* Accent tinted glass */
+    border-color: rgba(210, 180, 140, 0.4);
+    color: var(--color-accent);
+}
+
+.btn-primary:hover {
+    background: rgba(210, 180, 140, 0.4);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+/* Hero Content Styles */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hero-btns .btn {
+    min-width: 280px;
+    text-align: center;
+}
+
+/* Navbar (Glass) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    background: rgba(15, 15, 15, 0.6);
+    /* More transparent */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #fff, #bbb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    /* Reset fill color for image if inherited issues occur */
+    -webkit-text-fill-color: initial;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    opacity: 1;
+    color: var(--color-white);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Animations */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Grid Layouts */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--grid-gap);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap);
+}
+
+/* Components Override for Glass */
+section[style*="background-color"] {
+    background-color: transparent !important;
+    /* Remove solid bgs */
+    position: relative;
+}
+
+/* Optional separation lines via pseudo elements instead of bg colors */
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+/* Project Cards */
+.project-card {
+    position: relative;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a1a;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+}
+
+.project-image-wrapper {
+    background: linear-gradient(45deg, #1a1a1a, #222);
+    position: relative;
+}
+
+.project-image-wrapper::before {
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.project-card img {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.6s ease;
+}
+
+.project-card img.loaded {
+    opacity: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Inputs (Glassy) */
+input,
+textarea {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-color: var(--color-accent) !important;
+    outline: none;
+    box-shadow: 0 0 15px rgba(224, 208, 184, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Mobile menu needed */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+}
+
+/* Hero Slider */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1.5s ease-in-out, transform 8s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
