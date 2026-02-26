@@ -1,5 +1,5 @@
 /* 
-   Sozha Architecture - Data Loader 
+   Sozha Design & Build - Data Loader 
    Handles fetching and rendering content (Hardcoded for Offline Compatibility)
 */
 
@@ -127,9 +127,9 @@ projectsData.forEach(p => {
 const blogsData = [
     {
         "id": "1",
-        "title": "The Future of Sustainable Architecture",
+        "title": "The Future of Sustainable Design",
         "date": "Oct 12, 2025",
-        "author": "Ar. Sozha",
+        "author": "Design Team",
         "summary": "Exploring how eco-friendly materials and energy-efficient designs are shaping modern homes."
     },
     {

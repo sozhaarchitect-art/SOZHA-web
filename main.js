@@ -1,5 +1,5 @@
 /* 
-   Sozha Architecture - Main JS 
+   Sozha Design & Build - Main JS 
 */
 
 document.addEventListener('DOMContentLoaded', () => {
